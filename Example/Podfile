@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ResponderMessenger_Example' do
+  pod 'ResponderMessenger', :path => '../'
+
+  target 'ResponderMessenger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
