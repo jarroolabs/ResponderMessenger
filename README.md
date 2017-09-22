@@ -1,6 +1,6 @@
 # ResponderMessenger
 
-[![CI Status](http://img.shields.io/travis/Alex Manarpies/ResponderMessenger.svg?style=flat)](https://travis-ci.org/Alex Manarpies/ResponderMessenger)
+[![CI Status](http://img.shields.io/travis/jarrroo/ResponderMessenger.svg?style=flat)](https://travis-ci.org/jarrroo/ResponderMessenger)
 [![Version](https://img.shields.io/cocoapods/v/ResponderMessenger.svg?style=flat)](http://cocoapods.org/pods/ResponderMessenger)
 [![License](https://img.shields.io/cocoapods/l/ResponderMessenger.svg?style=flat)](http://cocoapods.org/pods/ResponderMessenger)
 [![Platform](https://img.shields.io/cocoapods/p/ResponderMessenger.svg?style=flat)](http://cocoapods.org/pods/ResponderMessenger)
@@ -22,7 +22,7 @@ pod 'ResponderMessenger'
 
 ## Author
 
-Alex Manarpies, alex@jarroo.com
+Jarroo, Alex Manarpies, alex@jarroo.com
 
 ## License
 
