@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ResponderMessenger'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ResponderMessenger.'
+  s.summary          = 'Plugs into the UIResponder chain to provide a Swift-first, loosely-coupled, protocol-oriented, inter-component messaging pattern.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  ResponderMessenger plugs into the UIResponder chain to provide a loosely-coupled, protocol-oriented, inter-component messaging pattern. 
+  The pattern is not opinionated on how you should employ it, however, you may want to use to notify the view in MVVM; or notify the controller 
+  from a table/collection view cell, without needing to resort to the usual delegate or notification closure pattern.
+
+  ResponderMessenger can also be used to bubble messages so they can be handled by multiple receivers.
                        DESC
 
-  s.homepage         = 'https://github.com/Alex Manarpies/ResponderMessenger'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/jarrroo/ResponderMessenger'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alex Manarpies' => 'alex@jarroo.com' }
-  s.source           = { :git => 'https://github.com/Alex Manarpies/ResponderMessenger.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/jarrroo/ResponderMessenger.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ResponderMessenger/Classes/**/*'
   

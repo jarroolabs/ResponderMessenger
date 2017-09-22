@@ -1,0 +1,6 @@
+framework module ResponderMessenger {
+  umbrella header "ResponderMessenger-umbrella.h"
+
+  export *
+  module * { export * }
+}

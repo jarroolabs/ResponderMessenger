@@ -1,29 +1,31 @@
-import UIKit
+//
+//  MessageResponderTests.swift
+//  Hivemind
+//
+//  Created by Alex on 19/09/2017.
+//  Copyright © 2017 Hivemind. All rights reserved.
+//
+
 import XCTest
 import ResponderMessenger
 
-class Tests: XCTestCase {
+class ResponderMessengerTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+    func testMessageSend() {
+        let exp = expectation(description: "expMessageReceived")
+
+        // Wait for message to arrive on parent responder
+        let responder3 = ParentResponder()
+        responder3.messageReceivedHandler = {
+            exp.fulfill()
         }
+
+        let responder2 = IntermediateResponder(with: responder3)
+        let responder1 = IntermediateResponder(with: responder2)
+
+        let messageResponder = responder1.makeMessenger(for: TestMessengerInterface.self)
+        messageResponder.send(to: { $0.sendReceived() })
+
+        waitForExpectations(timeout: 5)
     }
-    
 }

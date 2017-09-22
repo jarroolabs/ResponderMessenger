@@ -1,0 +1,16 @@
+PODS:
+  - ResponderMessenger (0.1.0)
+
+DEPENDENCIES:
+  - ResponderMessenger (from `../`)
+
+EXTERNAL SOURCES:
+  ResponderMessenger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ResponderMessenger: 9c42580fae998ce543edc74d43e4d6ae229cea43
+
+PODFILE CHECKSUM: 553cee12388e4a511b239d2e7891447ee692701e
+
+COCOAPODS: 1.2.1
